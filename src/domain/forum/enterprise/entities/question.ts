@@ -12,7 +12,7 @@ interface QuestionProps {
   slug: Slug
   createdAt: Date
   updatedAt?: Date
-}
+} 
 
 export class Question extends Entity<QuestionProps> {
   get title() {
