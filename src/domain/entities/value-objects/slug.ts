@@ -7,13 +7,13 @@ export class Slug {
 
   /**
    * Receives a string and normalize it and converts into a slug
-   * 
+   *
    * Example: "A simple example" => "a-simple-example"
-   * 
+   *
    * @param text {string}
    */
 
-  static createFromText(text: string){
+  static createFromText(text: string) {
     const slugText = text
       .normalize('NFKD')
       .toLowerCase()
