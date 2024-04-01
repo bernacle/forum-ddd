@@ -1,8 +1,8 @@
 import { AnswerQuestionUseCase } from './answer-question'
-import { AnswerRepository } from '@/domain/forum/application/repositories/answers-repository'
+import { AnswersRepository } from '@/domain/forum/application/repositories/answers-repository'
 import { Answer } from '@/domain/forum/enterprise/entities/answer'
 
-const fakeAnswersRepository: AnswerRepository = {
+const fakeAnswersRepository: AnswersRepository = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   create: async (answer: Answer) => {},
 }
