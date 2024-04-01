@@ -7,6 +7,5 @@ export class Student {
   constructor(name: string, id?: string) {
     this.name = name;
     this.id = id ?? randomUUID()
-
   }
 }
