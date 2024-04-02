@@ -9,7 +9,7 @@ describe('Create Question', () => {
     inMemoryQuestionsRepository = new InMemoryQuestionsRepository()
     sut = new CreateQuestionUseCase(inMemoryQuestionsRepository)
   })
-  it('create an question', async ({ expect }) => {
+  it('create an question', async () => {
     const { question } = await sut.execute({
       authorId: 'any_id',
       title: 'any_title',

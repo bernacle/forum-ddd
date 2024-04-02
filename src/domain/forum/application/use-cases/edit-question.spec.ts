@@ -12,7 +12,7 @@ describe('Edit Question', () => {
     sut = new EditQuestionUseCase(inMemoryQuestionsRepository)
   })
 
-  it('should be able to edit a question', async ({ expect }) => {
+  it('should be able to edit a question', async () => {
     const newQuestion = makeQuestion({}, new UniqueEntityID('question-1'))
 
     await inMemoryQuestionsRepository.create(newQuestion)

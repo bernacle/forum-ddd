@@ -12,7 +12,7 @@ describe('Delete Question', () => {
     sut = new DeleteQuestionUseCase(inMemoryQuestionsRepository)
   })
 
-  it('should be able to delete a question', async ({ expect }) => {
+  it('should be able to delete a question', async () => {
     const newQuestion = makeQuestion({}, new UniqueEntityID('question-1'))
 
     await inMemoryQuestionsRepository.create(newQuestion)
