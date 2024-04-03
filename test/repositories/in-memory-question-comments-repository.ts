@@ -16,12 +16,12 @@ export class InMemoryQuestionCommentsRepository
     return questionComment
   }
 
-  async create(questioncomment: QuestionComment): Promise<void> {
-    this.items.push(questioncomment)
+  async create(questionComment: QuestionComment): Promise<void> {
+    this.items.push(questionComment)
   }
 
-  async delete(answer: QuestionComment): Promise<void> {
-    const index = this.items.findIndex((item) => item.id === answer.id)
+  async delete(questionComment: QuestionComment): Promise<void> {
+    const index = this.items.findIndex((item) => item.id === questionComment.id)
     this.items.splice(index, 1)
   }
 }
