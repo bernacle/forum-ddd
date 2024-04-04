@@ -5,6 +5,7 @@ interface DeleteAnswerCommentUseCaseRequest {
   authorId: string
   answerCommentId: string
 }
+
 type DeleteAnswerCommentUseCaseResponse = Either<string, {}>
 
 export class DeleteAnswerCommentUseCase {

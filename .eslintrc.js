@@ -30,6 +30,15 @@ module.exports = {
         semi: false,
       },
     ],
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        extendDefaults: true,
+        types: {
+          '{}': false,
+        },
+      },
+    ],
   },
   settings: {
     'import/parsers': {
