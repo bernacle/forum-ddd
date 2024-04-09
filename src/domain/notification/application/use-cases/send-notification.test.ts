@@ -9,7 +9,7 @@ describe('Send Notification', () => {
     inMemoryNotificationsRepository = new InMemoryNotificationsRepository()
     sut = new SendNotificationUseCase(inMemoryNotificationsRepository)
   })
-  it('send an notification', async () => {
+  it('should be able to send a notification', async () => {
     const result = await sut.execute({
       recipientId: 'any_id',
       title: 'any_title',
